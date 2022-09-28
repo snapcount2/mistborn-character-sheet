@@ -1,0 +1,54 @@
+.wrapper {
+    padding: 8px;
+}
+
+.small-input {
+    max-width: 100px;
+}
+
+.three-column {
+    width: calc(33% - 26px);
+    min-width: 170px;
+}
+
+@media only screen and (max-width: 500px) {
+    .three-column {
+        min-width: 100%;
+        width: 100%;
+    }
+}
+
+.advancements {
+    width: 100%;
+    margin-top: 16px;
+}
+
+.grid-thingy {
+    width: 100%;
+}
+
+.name-row {
+    display: grid;
+    grid-template-columns: auto 40px;
+}
+
+.action-column {
+    width: 80px;
+}
+
+.always-show-slider-thumb {
+    ::ng-deep {
+        .mat-slider-thumb-label {
+            transform: rotate(45deg) !important;
+            border-radius: 50% 50% 0 !important;
+          }
+        
+        .mat-slider-thumb {
+            transform: scale(0) !important;
+        }
+        
+        .mat-slider-thumb-label-text {
+            opacity: 1 !important;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<app-dialog>
+    <title>Trait or Burden</title>
+    <content>
+        <app-text-input [(ngModel)]="trait.title" label="Type"></app-text-input>
+        <app-text-input [(ngModel)]="trait.description" label="Trait"></app-text-input>
+    </content>
+    <footer>
+        <button mat-button color="primary" (click)="save()">Save</button>
+    </footer>
+</app-dialog>

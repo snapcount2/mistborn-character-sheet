@@ -1,0 +1,6 @@
+<div class="wrapper">
+    <ng-content></ng-content>
+    <button mat-icon-button (click)="executeAction($event)" *ngIf="actionEnabled">
+        <mat-icon>add</mat-icon>
+    </button>
+</div>

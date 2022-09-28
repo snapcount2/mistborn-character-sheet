@@ -1,0 +1,18 @@
+<div class="horizontal">
+    <mat-form-field appearance="outline" class="dice-count">
+        <mat-label><strong>{{value?.title}}</strong></mat-label>
+        <input matInput
+               type="number"
+               inputmode="numeric"
+               [ngModel]="value.dice"
+               (ngModelChange)="updateDice($event)">
+      </mat-form-field>
+      <mat-form-field appearance="standard" *ngIf="value.noteTitle">
+        <mat-label>{{value.noteTitle}}</mat-label>
+        <input matInput
+               type="number"
+               inputmode="numeric"
+               [ngModel]="value.note"
+               (ngModelChange)="updateNote($event)">
+      </mat-form-field>
+</div>

@@ -1,0 +1,12 @@
+<app-dialog>
+    <title>Equipment</title>
+    <content>
+        <app-text-input [(ngModel)]="equipment.item" label="Item"></app-text-input>
+        <app-text-input [(ngModel)]="equipment.rules" label="Rules"></app-text-input>
+        <mat-checkbox [(ngModel)]="equipment.prop" color="primary">Is prop</mat-checkbox>
+
+    </content>
+    <footer>
+        <button mat-button color="primary" (click)="save()">Save</button>
+    </footer>
+</app-dialog>

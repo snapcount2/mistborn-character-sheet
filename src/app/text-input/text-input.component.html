@@ -1,0 +1,7 @@
+<mat-form-field appearance="standard">
+    <mat-label>{{label}}</mat-label>
+    <input matInput
+           [type]="type"
+           [attr.inputmode]="type === 'number' ? 'numeric' : 'text'"
+           [(ngModel)]="value">
+  </mat-form-field>

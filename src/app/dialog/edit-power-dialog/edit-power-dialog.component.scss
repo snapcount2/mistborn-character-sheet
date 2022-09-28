@@ -1,0 +1,19 @@
+.right {
+    right: -20px;
+    top: -10px;
+    position: absolute;
+}
+
+.dialog-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+mat-form-field {
+    width: 100%;
+}

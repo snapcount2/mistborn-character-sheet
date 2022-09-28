@@ -1,0 +1,11 @@
+mat-form-field {
+    width: 100%;
+}
+
+.no-label {
+    ::ng-deep {
+        .mat-form-field-label-wrapper {
+            display: none
+        }
+    }
+}

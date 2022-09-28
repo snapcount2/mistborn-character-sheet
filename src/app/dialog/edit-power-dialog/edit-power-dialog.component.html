@@ -1,0 +1,27 @@
+<app-dialog>
+  <title>Power</title>
+  <content>
+    <app-text-input [(ngModel)]="power.title" label="Power" required></app-text-input>
+        <mat-form-field appearance="standard">
+            <mat-label>Type</mat-label>
+            <mat-select [(ngModel)]="power.type">
+              <mat-option value="allomancy">
+                Allomancy
+              </mat-option>
+              <mat-option value="feruchemy">
+                Feruchemy
+              </mat-option>
+              <mat-option value="other">
+                Other
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        
+        <app-text-input [(ngModel)]="power.rating" label="Rating" type="number"></app-text-input>
+        <app-text-input [(ngModel)]="power.charges" label="Charges" type="number"></app-text-input>
+        <app-text-input [(ngModel)]="power.stunts" label="Stunts"></app-text-input>
+  </content>
+  <footer>
+    <button mat-button color="primary" (click)="save()">Save</button>
+  </footer>
+</app-dialog>
